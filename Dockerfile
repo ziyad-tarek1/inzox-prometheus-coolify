@@ -4,7 +4,7 @@ FROM prom/prometheus:latest
 COPY prometheus.yml /etc/prometheus/prometheus.yml
 
 # copy recording and alerting rules
-COPY rules/ /etc/prometheus/rules/
+# COPY rules/ /etc/prometheus/rules/
 
 # persist and serve metrics
 EXPOSE 9090
